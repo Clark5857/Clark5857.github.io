@@ -14,8 +14,8 @@
     <header>Your Name Site</header>
   <nav>Navigation Links Go Here</nav>
   <main>
-   <h1>Your Name Here</h1>
-   <p>This page is for my CIT 230 class. Feel free to add more here.</p>
+   <h1>James Clark</h1>
+   <p>This page is for my CIT 230 class. I am learning to code, but I intend to master it before the semester is over</p>
    <h2>School Assignments</h2>
   </main>
   <footer>
