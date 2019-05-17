@@ -1,20 +1,20 @@
 {
- "Franklin": {
-  "City": "Franklin",
-  "State": "ID",
-  "High": 64,
-  "Low": 41,
-  "Temp": 40,
-  "Precip": 0,
++"Franklin": {
++"City": "Franklin",
++"State": "ID",
++"High": 64,
++"Low": 41,
++"Temp": 40,
++"Precip": 0,
   "Wind": "5",
   "Direction": "SW",
   "Gusts": "10-12",
   "Summary": "Rain",
-  "Longitude": 111.79,
-  "Latitude": 42.07,
-  "Elevation": 1514.246,
-  "Zip": 83237,
-  "Hourly": [41, 41, 41,  41, 41, 41, 42, 44, 44, 46, 49, 51, 55]
++"Longitude": 111.79,
++"Latitude": 42.07,
++"Elevation": 1514.246,
++"Zip": 83237,
++ "Hourly": [41, 41, 41,  41, 41, 41, 42, 44, 44, 46, 49, 51, 55]
  },
  "Greenville": {
   "City": "Greenville",
