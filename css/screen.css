@@ -2,5 +2,12 @@
 1. imports
 2. General rules
 3. Mobile Rules
-4. Large Screen Rules
-*/
+4. Large Screen Rules */
+
+/* 1. Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+
+/* 2. General Rule */
+body { font-family: helvetica, sans-serif}
+h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif; }
