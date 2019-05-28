@@ -42,12 +42,15 @@ html {
   nav ul li { 
     display: inline-block; 
     list-style: none; 
+
   }
 
   nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: skyblue;
+    align: center;
   }
 
   header {
@@ -56,8 +59,9 @@ html {
   }
 
   footer{
-    margin-bottom: 2em;
+    margin-bottom: 70px;
     background-color: #0e89d5
+
    }
 
    #site-brand {
@@ -70,5 +74,13 @@ html {
   }
   
 #hourly {
-  align: center
+  align: center;
+}
+
+.tile {
+  text-align: center;
+}
+
+.local {
+  text-align: center;
 }
