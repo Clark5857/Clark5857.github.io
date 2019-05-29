@@ -23,14 +23,33 @@ html {
     box-sizing: inherit;
    }
 
+   /* font, font properties*/
+   
+   h1,h2,h3,h4,h5,h6 {
+    font-family: sansita, Eurostyle, sans-serif;
+  }
+
+   h1 {
+    clear: left;
+  }
+
+  h4 {
+    color: white
+  }
+
+.tile {
+  text-align: center;
+}
+
+.local {
+  text-align: center;
+}
+
    body{
     font-family: helvetica, verdana, sans-serif;
     font-size: 20px;
   }
 
-  h1,h2,h3,h4,h5,h6 {
-    font-family: sansita, Eurostyle, sans-serif;
-  }
 
   .tile{
     background-color: rgba(200,200,200,.6);
@@ -76,29 +95,15 @@ html {
     background-color: #0e89d5
    }
 
-   #site-brand {
-    font-size: 2em;
-    font-weight: 600;
-  }
-
-  h1 {
-    clear: left;
-  }
-
-  h4 {
-    color: white
-  }
   
-#hourly {
-  overflow: hidden;
-}
 
-.tile {
-  text-align: center;
-}
+  
 
-.local {
-  text-align: center;
+/* id tags*/
+
+#site-brand {
+  font-size: 2em;
+  font-weight: 600;
 }
 
 #high {
