@@ -9,19 +9,28 @@
 
 
 /* 2. General Rule */
-body { font-family: helvetica, sans-serif}
-h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif; }
+html {
+  box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after{
+  box-sizing: inherit;
+ }
+
+body{
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif; 
+}
+
+
 
 /* 3. normalize.css import will follow */
 @import url('normalize.css');
 
-html {
-    box-sizing: border-box;
-   }
-   
-   *, *:before, *:after{
-    box-sizing: inherit;
-   }
+
 
    /* font, font properties*/
 
@@ -46,11 +55,6 @@ html {
 .local {
   text-align: center;
 }
-
-   body{
-    font-family: helvetica, verdana, sans-serif;
-    font-size: 20px;
-  }
 
 
   .tile{
@@ -93,9 +97,6 @@ html {
     background-color: #0e89d5
    }
 
-  
-
-  
 
 /* id tags*/
 
@@ -112,6 +113,7 @@ html {
   color: blue;
 }
 
+/*
 #scroll {
   overflow: auto;
   white-space: nowrap;
@@ -121,6 +123,7 @@ html {
   overflow: auto;
   white-space: nowrap;
 }
+*/
 
 #location ul li {
   display: inline-block;
