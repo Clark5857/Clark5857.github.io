@@ -24,7 +24,7 @@ html {
    }
 
    /* font, font properties*/
-   
+
    h1,h2,h3,h4,h5,h6 {
     font-family: sansita, Eurostyle, sans-serif;
   }
@@ -36,6 +36,8 @@ html {
   h4 {
     color: white
   }
+
+/*section properties*/
 
 .tile {
   text-align: center;
@@ -75,10 +77,6 @@ html {
     background-color: skyblue;
     margin: auto;
     width:90%;
-  }
-
-  #location ul li {
-    display: inline-block;
   }
 
   header {
@@ -122,4 +120,8 @@ html {
 #curWeather {
   overflow: auto;
   white-space: nowrap;
+}
+
+#location ul li {
+  display: inline-block;
 }
