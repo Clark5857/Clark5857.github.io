@@ -108,3 +108,13 @@ html {
 #low {
   color: blue;
 }
+
+#scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#curWeather {
+  overflow: auto;
+  white-space: nowrap;
+}
