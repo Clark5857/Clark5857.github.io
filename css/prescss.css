@@ -25,7 +25,7 @@ header {
 }
 
 #title {
-    padding-left: 20em;
+    padding-left: 19em;
 }
 
 h1 {
@@ -42,8 +42,11 @@ body {
 /* nav */
 
 .nodot {
-    padding-left: 20em;
+    padding-left: 19em;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 button {
