@@ -59,10 +59,11 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
 
   .tile{
     background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
+    /* margin: .2em auto; */
     border: 1px solid;
     border-radius: 15px;
-    
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
   ul {
@@ -82,6 +83,8 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
     background-color: skyblue;
     margin: auto;
     width:100%;
+    overflow: auto;
+    white-space: nowrap;
 
   }
 
@@ -115,7 +118,7 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
   color: blue;
 }
 
-/*
+
 #scroll {
   overflow: auto;
   white-space: nowrap;
@@ -125,7 +128,7 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
   overflow: auto;
   white-space: nowrap;
 }
-*/
+
 
 #location ul li {
   display: inline-block;
