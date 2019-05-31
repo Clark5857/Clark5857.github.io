@@ -25,14 +25,23 @@ body{
 h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif; 
 }
 
+header {
+  margin-bottom: 2em;
+  background-color: #0e89d5
+}
 
+
+footer{
+  margin-bottom: 70px;
+  background-color: #0e89d5
+ }
 
 /* 3. normalize.css import will follow */
 @import url('normalize.css');
 
 
 
-   /* font, font properties*/
+/* font, font properties*/
 
    h1,h2,h3,h4,h5,h6 {
     font-family: sansita, Eurostyle, sans-serif;
@@ -48,9 +57,9 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
 
 /*section properties*/
 
-.tile {
+/*.tile {
   text-align: center;
-}
+}*/
 
 .local {
   text-align: center;
@@ -64,6 +73,7 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
     border-radius: 15px;
     margin-left: 2em;
     margin-right: 2em;
+    text-align: center;
   }
 
   ul {
@@ -88,20 +98,10 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Sansita', sans-serif;
 
   }
 
-  header {
-    margin-bottom: 2em;
-    background-color: #0e89d5
-  }
-
   header img {
     float: left;
+    height: 2.3em;
   }
-
-  footer{
-    margin-bottom: 70px;
-    background-color: #0e89d5
-   }
-
 
 /* id tags*/
 
