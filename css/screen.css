@@ -135,14 +135,15 @@ footer{
 
 /* Mobile
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 450px){
 
   .container{
     display: flex;
     flex-direction: column;
     }
   
-  }
+  
+
 /* Desktop */
 
 @media screen and (min-width: 900px){
