@@ -53,6 +53,7 @@ h1 {
 	background-image: url(../presimages/nps-logo50.png), url(../presimages/grand-canyon400.jpg);
 	background-repeat: no-repeat;
 	background-position: right, left;
+	background-size: 7%, 100%;
 
 }
 
@@ -174,8 +175,9 @@ h1 {
 		font-size: 2em;
 		line-height: 1.125;
 	}
-	/*	Background Images - Use with medium screens */
-	.page-header {}
+
+	 /* Background Images - Use with medium screens  */
+	 
 	.page-nav {
 		position: relative;
 	}
@@ -189,6 +191,7 @@ h1 {
 		margin: 0 1em 1em 0;
 		float: left;
 		width: 50%;
+		
 	}
 	.featured-video {
 		float: left;
@@ -206,12 +209,13 @@ h1 {
 }
 
 
+
 /********************************
 * Large Screen Styles
 * 1200px viewport / 18px font = 66.7em
 ********************************/
 
-@media (min-width: 66.7em) {
+@media (min-width: 41.67em) {
 	body {
 		font-size: 1.5vw;
 	}
@@ -220,7 +224,12 @@ h1 {
 		line-height: 1.05;
 	}
 	/*	Background Images - Use with large screens */
-	.page-header {}
+	.page-header {
+		background-image: url(../presimages/nps-logo150.png), url(../presimages/grand-canyon1200.jpg);
+		background-repeat: no-repeat;
+		background-position: right, left;
+		background-size: 7%, 100%;
+	}
 	.page-nav li {
 		flex: 0 1 10%;
 	}
@@ -229,4 +238,11 @@ h1 {
 		padding-right: 2em;
 		padding-left: 2em;
 	}
+
+.featured-image {
+	margin: 0 1em 1em 0;
+	float: left;
+	width: 50%;
+}
+
 }
