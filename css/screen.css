@@ -6,6 +6,8 @@
 
 /* 1. Imports */
 @import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+@import url('normalize.css');
+
 
 
 /* 2. General Rule */
@@ -36,16 +38,9 @@ footer{
   background-color: #0e89d5
  }
 
-/* 3. normalize.css import will follow */
-@import url('normalize.css');
-
-
 
 /* font, font properties*/
 
-   h1,h2,h3,h4,h5,h6 {
-    font-family: sansita, Eurostyle, sans-serif;
-  }
 
    h1 {
     clear: left;
@@ -133,7 +128,7 @@ footer{
   display: inline-block;
 }
 
-/* Mobile
+ /*Mobile
 
 @media screen and (max-width: 450px){
 
