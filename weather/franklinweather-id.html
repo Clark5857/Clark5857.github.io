@@ -54,7 +54,14 @@
   </section>
 
   <section id="summary" class="tile">
-      <img src="images/rain.jpg" alt="rain" width="300">
+      <!-- <img src="images/rain.jpg" alt="rain"> -->
+
+      <picture>
+        <source media="(min-width: 400px)" srcset="images/rain800.jpg">
+        <source media="(min-width: 250px)" srcset="images/rain400.jpg">
+        <img src="images/rain400.jpg" alt="rain">
+      </picture>
+
     <ul>  
       <li><strong>Summary:</strong> Rain</li>
     </ul>
