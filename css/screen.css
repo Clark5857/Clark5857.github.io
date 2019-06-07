@@ -56,6 +56,12 @@ footer{
   text-align: center;
 }*/
 
+#background {
+  background-image: url("../weather/images/clear400.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .local {
   text-align: center;
 }
@@ -128,20 +134,25 @@ footer{
   display: inline-block;
 }
 
- /*Mobile
+ /*Mobile*/
 
-@media screen and (max-width: 450px){
+/* @media screen and (max-width: 899px){ }*/
 
-  .container{
-    display: flex;
-    flex-direction: column;
-    }
-  
+
   
 
-/* Desktop */
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
 
 @media screen and (min-width: 900px){
+  
+  #background {
+    background-image: url("../weather/images/clear1300.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .container{
   display: flex;
@@ -151,4 +162,5 @@ footer{
   .tile {
     width: 30%;
   }
+
 }

@@ -40,6 +40,9 @@ h1 {
 	/*	line-height: 1.25;*/
 }
 
+.title {
+	padding-left: 2.5%;
+}
 
 /*******************************
 * Page Header Styles
@@ -54,7 +57,7 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: right, left;
 	background-size: 7%, 100%;
-
+	background-position: 95%, left;
 }
 
 
@@ -227,8 +230,9 @@ h1 {
 	.page-header {
 		background-image: url(../presimages/nps-logo150.png), url(../presimages/grand-canyon1200.jpg);
 		background-repeat: no-repeat;
-		background-position: right, left;
+		background-position: 95%, left;
 		background-size: 7%, 100%;
+
 	}
 	.page-nav li {
 		flex: 0 1 10%;
