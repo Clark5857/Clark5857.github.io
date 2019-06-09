@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Images & Text</title>
+        <meta name="description" content="Short Description of the page.">
+        <link rel="stylesheet" href="/css/resp.css" media="screen">
+    </head>
+
+
+    <body>
+
+        
+            <header>
+                    <div id="title">
+                    <h1>Responsive Image Demo</h1>
+                    </div>
+
+                    <nav>
+                        <ul class="nodot">
+                        <li><a href="index.html" class="button"> Index | Home </a></li>
+                        </ul>
+                    </nav>
+                           
+            </header>
+<section id="box">
+
+        <section class="tile"> 
+            
+            <picture>
+                <source media="(min-width: 900px)" srcset="weather/images/rain800.jpg">
+                <source media="(min-width: 250px)" srcset="weather/images/rain400.jpg">
+                <img src="weather/images/rain400.jpg" alt="rain">
+            </picture>
+ <br>
+            <ul id="one">
+                <li>Name: rain400.jpg</li>
+                <li>Dimension: 400 x 400</li>
+                <li>Weight 6kb</li>
+            </ul>
+            
+            <ul id="two">
+                <li>Name: rain800.jpg</li>
+                <li>Dimension: 800 x 800</li>
+                <li>Weight 39kb</li>
+            </ul>
+
+        </section>
+
+</section>
+
+<section id="box">
+
+    <section class="tile"> 
+        
+        <picture>
+            <source media="(min-width: 900px)" srcset="weather/images/clouds800.jpg">
+            <source media="(min-width: 250px)" srcset="weather/images/clouds400.jpg">
+            <img src="weather/images/clouds400.jpg" alt="rain">
+        </picture>
+<br>
+        <ul id="one">
+            <li>Name: cloud400.jpg</li>
+            <li>Dimension: 400 x 400</li>
+            <li>Weight 5kb</li>
+        </ul>
+        
+        <ul id="two">
+            <li>Name: cloud800.jpg</li>
+            <li>Dimension: 800 x 800</li>
+            <li>Weight 31kb</li>
+        </ul>
+
+    </section>
+
+</section>
+
+<section id="box">
+
+    <section class="tile"> 
+        
+        <picture>
+            <source media="(min-width: 900px)" srcset="weather/images/fog800.jpg">
+            <source media="(min-width: 250px)" srcset="weather/images/fog400.jpg">
+            <img src="weather/images/fog400.jpg" alt="rain">
+        </picture>
+<br>
+        <ul id="one">
+            <li>Name: fog400.jpg</li>
+            <li>Dimension: 400 x 400</li>
+            <li>Weight 3kb</li>
+        </ul>
+        
+        <ul id="two">
+            <li>Name: fog800.jpg</li>
+            <li>Dimension: 800 x 800</li>
+            <li>Weight 17kb</li>
+        </ul>
+
+    </section>
+
+</section>
+
+<section id="box">
+
+    <section class="tile"> 
+        
+        <picture>
+            <source media="(min-width: 900px)" srcset="weather/images/snowlarge.jpg">
+            <source media="(min-width: 250px)" srcset="weather/images/snowsmall.jpg">
+            <img src="weather/images/snowsmall.jpg" alt="rain">
+        </picture>
+<br>
+        <ul id="one">
+            <li>Name: snowsmall.jpg</li>
+            <li>Dimension: 1620 x 1620</li>
+            <li>Weight 97kb</li>
+        </ul>
+        
+        <ul id="two">
+            <li>Name: snowlarge.jpg</li>
+            <li>Dimension: 2150 x 2150</li>
+            <li>Weight 235kb</li>
+        </ul>
+
+    </section>
+
+</section>
+
+
+</body>
+</html>
