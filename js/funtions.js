@@ -28,9 +28,6 @@ function buildWC(speed, temp) {
     }
 
 
-
-
-
     
     // Wind Dial Function
 function windDial(direction){
@@ -77,3 +74,15 @@ function windDial(direction){
       break;
     }
    }
+
+//    Summary Images
+
+function backgroundImage(summaryImages){
+
+    const curWeather = document.getElementById("curWeather");
+    console.log(summaryImages);
+
+    switch (image){
+    curWeather.setAttribute("class", "clear");
+  }
+}
