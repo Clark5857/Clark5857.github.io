@@ -18,18 +18,18 @@
     <h1 id="locName">Franklin, ID</h1> 
     
   <section id="location" class="local">
-      <div id="curWeather">
+      
       <ul>
        <li><strong>Zip:</strong> 83237 |</li>
-       <li><strong>Elevation:</strong> 1514.246m |</li>
+       <li><strong>Elevation:</strong> <span id="elevation"></span> | </li>
        <li><strong>Location:</strong> 111.79, 42.07 |</li>
        <li><strong>Latitude:</strong> 42.07 |</li>
        <li><strong>Longitude:</strong> 111.79 |</li>
       </ul>
-      </div>
   </section>
 
   <!-- <section id="background"> -->
+  <div id="curWeather" class="clear">
   <section class="container"> 
 
   <section id="temps" class="tile">
@@ -37,9 +37,9 @@
       <ul>
         <li><h2>40 &deg; F</h2></li>
         <li><strong>Percipitation:</strong> 0</li>
-        <li><strong>High:</strong><span id="high">64 &deg;</span> </li>
-        <li><strong>Low:</strong><span id="low">41 &deg;</span></li>
-        <li><strong>Feels Like</strong><span id="feelTemp"></span></li>
+        <li><strong>High: </strong><span id="high">64 &deg;</span> </li>
+        <li><strong>Low: </strong><span id="low">41 &deg;</span></li>
+        <li><strong>Feels Like: </strong><span id="feelTemp"></span></li>
       </ul>
   </section>
   
@@ -56,11 +56,11 @@
 
   <section id="summary" class="tile">
 
-      <!-- <picture>
+      <picture>
         <source media="(min-width: 400px)" srcset="images/rain800.jpg">
         <source media="(min-width: 250px)" srcset="images/rain400.jpg">
         <img src="images/rain400.jpg" alt="rain">
-      </picture> -->
+      </picture>
 
       <div id="sumimage" class="rain"></div>
 
@@ -78,6 +78,7 @@
     <p>11am: 41&deg;F | 12pm:41 &deg;F | 1pm: 41&deg;F | 2pm: 41&deg;F | 3pm 41&deg;F | 4pm: 41&deg;F | 5pm: 42&deg;F | 6pm: 44&deg;F | 7pm: 44&deg;F | 8pm: 46&deg;F | 9pm: 49&deg;F | 10pm: 51&deg;F | 11pm: 55&deg;F</p>
     </div>
   </section>
+  </div>
 
 </section>
 

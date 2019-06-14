@@ -75,14 +75,82 @@ function windDial(direction){
     }
    }
 
-//    Summary Images
+//    if statments
+let conditions = "clear";
+let backImages = getcondition (conditions);
 
-function backgroundImage(summaryImages){
+
+function getcondition (conditions) {
+let result;
+
+    if (conditions == "clear") {
+         result = "clear";
+    }
+    else if (conditions == "clouds"){
+        result = "clouds";
+    }
+    else if (conditions == "fog") {
+        result = "fog";
+    }
+    else if (conditions == "rain") {
+        result = "rain";
+    }
+    else if (conditions == "snow"){
+        result = "snow";
+    }
+return result;
+
+}
+
+//    Background Images
+backgroundImage(backImages)
+
+function backgroundImage(backImages){
 
     const curWeather = document.getElementById("curWeather");
-    console.log(summaryImages);
+    const sumimage = document.getElementById("sumimage");
+    console.log(backImages);
 
-    switch (image){
-    curWeather.setAttribute("class", "clear");
+    switch (backImages){
+
+    case "clear":
+        curWeather.setAttribute("class", "clear");
+        sumimage.setAttribute("class", "clear1");
+        break;
+    case "clouds":
+        curWeather.setAttribute("class", "clouds");
+        sumimage.setAttribute("class", "clouds");
+        break;
+    case "fog":
+        curWeather.setAttribute("class", "fog");
+        sumimage.setAttribute("class", "fog");
+        break;
+    case "rain":
+        curWeather.setAttribute("class", "rain");
+        sumimage.setAttribute("class", "rain");
+        break;
+    case "snow":
+        curWeather.setAttribute("class", "snow");
+        sumimage.setAttribute("class", "snow");
+        break;
   }
 }
+
+// Meters to Feet Function
+
+const meters = 1514.246; 
+
+meter2feet(meters);
+
+function meter2feet(meters) {
+    const elevation = document.getElementById('elevation');
+   
+    
+    let mf = meters * 3.28 ; 
+
+    mf = Math.floor(mf); 
+
+    elevation.innerHTML = mf;
+}
+   
+    
