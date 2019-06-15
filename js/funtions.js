@@ -83,19 +83,19 @@ let backImages = getcondition (conditions);
 function getcondition (conditions) {
 let result;
 
-    if (conditions == "clear") {
+    if (conditions.includes("clear") || conditions.includes("sun")) {
          result = "clear";
     }
-    else if (conditions == "clouds"){
+    else if (conditions.includes("clouds") || conditions.includes("shade")) {
         result = "clouds";
     }
-    else if (conditions == "fog") {
+    else if (conditions.includes("fog") || conditions.includes("moisture")) {
         result = "fog";
     }
-    else if (conditions == "rain") {
+    else if (conditions.includes("rain") || conditions.includes("wet")) {
         result = "rain";
     }
-    else if (conditions == "snow"){
+    else if (conditions.includes("snow") || conditions.includes("fluff")) {
         result = "snow";
     }
 return result;
