@@ -201,9 +201,12 @@ picture img {
   z-index: 100;
  }
 
-/* #sumimage {
-
-} */
+#sumimage {
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
   
 #hourly{
   background-color: rgba(200,200,200,.6);
