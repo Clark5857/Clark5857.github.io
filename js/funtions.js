@@ -3,13 +3,13 @@
 console.log('My javascript is being read.');
 
 // Calculate the Windchill
-const temp = 31;
-const speed = 5;
+let temp = 31;
+let speed = 5;
 
 buildWC(speed, temp);
 
 function buildWC(speed, temp) {
-    const feelTemp = document.getElementById('feelTemp');
+    let feelTemp = document.getElementById('feelTemp');
    
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
@@ -32,7 +32,7 @@ function buildWC(speed, temp) {
     // Wind Dial Function
 function windDial(direction){
     // Get the container
-    const dial = document.getElementById("dial");
+    let dial = document.getElementById("dial");
     console.log(direction);
     // Determine the dial class
     switch (direction){
@@ -107,8 +107,8 @@ backgroundImage(backImages)
 
 function backgroundImage(backImages){
 
-    const curWeather = document.getElementById("curWeather");
-    const sumimage = document.getElementById("sumimage");
+    let curWeather = document.getElementById("curWeather");
+    let sumimage = document.getElementById("sumimage");
     console.log(backImages);
 
     switch (backImages){
@@ -138,12 +138,12 @@ function backgroundImage(backImages){
 
 // Meters to Feet Function
 
-const meters = 1514.246; 
+let meters = 1514.246; 
 
 meter2feet(meters);
 
 function meter2feet(meters) {
-    const elevation = document.getElementById('elevation');
+    let elevation = document.getElementById('elevation');
    
     
     let mf = meters * 3.28 ; 
