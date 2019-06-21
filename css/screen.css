@@ -204,6 +204,7 @@ picture img {
   background-image: url("/weather/images/snowsmall.jpg");
  }
 
+ /* summary images*/
  .clear1 {
   background-image: url("/weather/images/clear400.jpg");
   z-index: 100;

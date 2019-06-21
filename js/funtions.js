@@ -115,7 +115,7 @@ function backgroundImage(backImages){
 
     case "clear":
         curWeather.setAttribute("class", "clear");
-        sumimage.setAttribute("class", "clear1");
+        sumimage.setAttribute("class", "clear");
         break;
     case "clouds":
         curWeather.setAttribute("class", "clouds");
