@@ -149,6 +149,10 @@ picture img {
   margin: -.6em auto 0;
  }
 
+ /* #wind-speed {
+   position: ;
+ } */
+
  /* Degree Classes */
 
  .n {
@@ -211,7 +215,9 @@ picture img {
   width: 50%;
   margin: auto;
 }
-  
+#hourly-deg {
+  display: flex;
+}
 #hourly{
   background-color: rgba(200,200,200,.6);
     margin: .2em auto; 

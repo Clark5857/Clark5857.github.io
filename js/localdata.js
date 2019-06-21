@@ -4,8 +4,9 @@
 let pageNav = document.getElementById('page-nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
+let weatherURL = "../weather/weather.json";
 
-let weatherURL = "path/to/weather.json";
+fetchData(weatherURL);
 function fetchData(weatherURL){
   let cityName = 'Greenville'; // The data we want from the weather.json file
   fetch(weatherURL)
@@ -21,7 +22,9 @@ function fetchData(weatherURL){
     console.log(data);
     // data is the full JavaScript object, but we only want the greenville part
     // shorten the variable and focus only on the data we want to reduce typing
+    
     let g = data[cityName];
+    //the g in the funtion stands for greenville
 
     // ************ Get the content ******************************
 
@@ -34,22 +37,36 @@ function fetchData(weatherURL){
     console.log('fullName is: '+fullName);
 
     // Get the temperature data
-
+let tempData = g.Temp;
+console.log(tempData);
 
     // Get the wind data 
+let windData = g.Wind;
+console.log(windData);
 
-
-    // Get the current conditions
-
+    // Get the current conditions !Check your HTML
+let curConditions = g.Summary;
+console.log(curConditions);
 
     // Get the hourly data 
+let hourData = g.Hourly;
+console.log(hourData);
+
+let windBox = g.Direction;
+
+let elevationBox = g.Elevation;
+
+let longBox = g.Longitude;
 
     // ************ Display the content ******************************
     // Set the title with the location name at the first
     // Gets the title element so it can be worked with
+    
     let pageTitle = document.getElementById('page-title');
+    
     // Create a text node containing the full name 
     let fullNameNode = document.createTextNode(fullName);
+
     // inserts the fullName value before any other content that might exist
     pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
     // When this is done the title should look something like this:
@@ -57,22 +74,32 @@ function fetchData(weatherURL){
 
     // Set the Location information
     // Get the h1 to display the city location
-    let contentHeading = document.getElementById('contentHeading');
+    let contentHeading = document.getElementById('locName');
     contentHeading.innerHTML = fullName;
     // The h1 in main h1 should now say "Greenville, SC"
 
 
-    // Set the temperature information
+    document.getElementById("long").innerHTML = longBox;
 
+    // Set the temperature information
+    document.getElementById("curTemp").innerHTML = tempData;
 
     // Set the wind information
-
+    document.getElementById("wind-speed").innerHTML = windData;
+    buildWC(windData,tempData);
 
     // Set the current conditions information
-
+    document.getElementById("sumTitle").innerHTML = curConditions;
 
     // Set the hourly temperature information
+    document.getElementById("hourly-deg").innerHTML = buildHourlyData( nextHour,hourData);
 
+   let conditions = getcondition(curConditions);
+   backgroundImage(conditions);
+
+   windDial(windBox);
+
+   meter2feet(elevationBox);
 
     // Change the status of the containers
     contentContainer.setAttribute('class', ''); // removes the hide class

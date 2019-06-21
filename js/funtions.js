@@ -86,13 +86,13 @@ let result;
     if (conditions.includes("clear") || conditions.includes("sun")) {
          result = "clear";
     }
-    else if (conditions.includes("clouds") || conditions.includes("shade")) {
+    else if (conditions.toLowerCase().includes ("clouds") || conditions.toLowerCase().includes("shade")) {
         result = "clouds";
     }
     else if (conditions.includes("fog") || conditions.includes("moisture")) {
         result = "fog";
     }
-    else if (conditions.includes("rain") || conditions.includes("wet")) {
+    else if (conditions.toLowerCase().includes("rain") || conditions.toLowerCase().includes("thunderstorms")) {
         result = "rain";
     }
     else if (conditions.includes("snow") || conditions.includes("fluff")) {

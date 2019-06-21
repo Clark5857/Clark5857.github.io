@@ -17,6 +17,7 @@
   <section id="status">Please be patient while I get your weather information.</section>
 
   <main id="main-content" class="hide">
+
     <h1 id="locName">Greenville, SC</h1> 
     
   <section id="location" class="local">
@@ -26,7 +27,7 @@
        <li><strong>Elevation:</strong> <span id="elevation"></span> | </li>
        <li><strong>Location:</strong> 111.79, 42.07 |</li>
        <li><strong>Latitude:</strong> 34.85|</li>
-       <li><strong>Longitude:</strong> -82.4 |</li>
+       <li><strong>Longitude:</strong><span id="long"></span> |</li>
       </ul>
   </section>
 
@@ -37,20 +38,27 @@
   <section id="temps" class="tile">
     <h2>Temprature</h2>
       <ul>
-        <li><h2>40 &deg; F</h2></li>
-        <li><strong>Percipitation:</strong> 45</li>
-        <li><strong>High: </strong><span id="high">72 &deg;</span> </li>
-        <li><strong>Low: </strong><span id="low">51 &deg;</span></li>
+        <li><h2 id="curTemp">?? &deg; F</h2></li>
+        <li><strong>Percipitation:</strong>??</li>
+        <br>
+        <li><strong>High: </strong><span id="high">?? &deg;</span> </li>
+        <br>
+        <li><strong>Low: </strong><span id="low">?? &deg;</span></li>
+        <br>
         <li><strong>Feels Like: </strong><span id="feelTemp"></span></li>
       </ul>
   </section>
   
   <section id="wind" class="tile">
     <h2>Wind</h2>
-    <div id="dial" class="sw"></div>
-    <p>5 mph</p>  
+    <!-- work the css to inset the mph -->
+
+    <div id="wind-dial"><div id="dial" class="sw"></div>
+    
+    <p id="wind-speed">?? mph</p>
     <ul>
         <li><strong>Direction:</strong> SW</li>
+        <br>
         <li><strong>Gusts:</strong> 10-12</li>
         
       </ul>
@@ -64,9 +72,8 @@
         <img src="images/rain400.jpg" alt="rain">
       </picture> -->
 
-      <ul>  
-        <li><strong>Summary</strong></li>
-      </ul>
+    <h2 id="sumTitle"><strong>Summary</strong></h2>
+      
 
       <div id="sumimage" class="clear"></div>
 
@@ -79,7 +86,7 @@
   <section id="hourly"> 
     <h3>Hourly</h3>
     <div id="scroll">
-    <p>11am: 41&deg;F | 12pm:41 &deg;F | 1pm: 41&deg;F | 2pm: 41&deg;F | 3pm 41&deg;F | 4pm: 41&deg;F | 5pm: 42&deg;F | 6pm: 44&deg;F | 7pm: 44&deg;F | 8pm: 46&deg;F | 9pm: 49&deg;F | 10pm: 51&deg;F | 11pm: 55&deg;F</p>
+    <ul id="hourly-deg">11am: 41&deg;F | 12pm:41 &deg;F | 1pm: 41&deg;F | 2pm: 41&deg;F | 3pm 41&deg;F | 4pm: 41&deg;F | 5pm: 42&deg;F | 6pm: 44&deg;F | 7pm: 44&deg;F | 8pm: 46&deg;F | 9pm: 49&deg;F | 10pm: 51&deg;F | 11pm: 55&deg;F</ul>
     </div>
   </section>
   </div>
