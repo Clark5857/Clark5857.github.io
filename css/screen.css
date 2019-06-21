@@ -66,6 +66,10 @@ footer{
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
   .tile{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto; 

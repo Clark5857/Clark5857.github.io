@@ -2,7 +2,7 @@
 <html lang="en-us">
  <head>
   <meta charset="UTF-8">
-  <title>Franklin, ID | Weather Site</title>
+  <title id="page-title">Greenville, SC | Weather Site</title>
   <meta name="description" content="Short Description of the page.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css" media="screen">
@@ -14,17 +14,19 @@
     <p id="site-brand">The Weather Site</p>
   </header>
 
-  <main>
-    <h1 id="locName">Franklin, ID</h1> 
+  <section id="status">Please be patient while I get your weather information.</section>
+
+  <main id="main-content" class="hide">
+    <h1 id="locName">Greenville, SC</h1> 
     
   <section id="location" class="local">
       
       <ul>
-       <li><strong>Zip:</strong> 83237 |</li>
+       <li><strong>Zip:</strong> 29601 |</li>
        <li><strong>Elevation:</strong> <span id="elevation"></span> | </li>
        <li><strong>Location:</strong> 111.79, 42.07 |</li>
-       <li><strong>Latitude:</strong> 42.07 |</li>
-       <li><strong>Longitude:</strong> 111.79 |</li>
+       <li><strong>Latitude:</strong> 34.85|</li>
+       <li><strong>Longitude:</strong> -82.4 |</li>
       </ul>
   </section>
 
@@ -36,16 +38,16 @@
     <h2>Temprature</h2>
       <ul>
         <li><h2>40 &deg; F</h2></li>
-        <li><strong>Percipitation:</strong> 0</li>
-        <li><strong>High: </strong><span id="high">64 &deg;</span> </li>
-        <li><strong>Low: </strong><span id="low">41 &deg;</span></li>
+        <li><strong>Percipitation:</strong> 45</li>
+        <li><strong>High: </strong><span id="high">72 &deg;</span> </li>
+        <li><strong>Low: </strong><span id="low">51 &deg;</span></li>
         <li><strong>Feels Like: </strong><span id="feelTemp"></span></li>
       </ul>
   </section>
   
   <section id="wind" class="tile">
     <h2>Wind</h2>
-    <div id="dial" class="w"></div>
+    <div id="dial" class="sw"></div>
     <p>5 mph</p>  
     <ul>
         <li><strong>Direction:</strong> SW</li>
@@ -89,17 +91,18 @@
       <h4>&copy;2019 James Clark</h4>
   </footer>
 
-  <nav>
+  <nav id="page-nav">
     <ul>
         <li><a href="weathersiteplan.html" title="Go to the Weather Site home page">Weather Site Plan</a></li>
         <li><a href="../index.html"> Index | Home </a></li>
         <li><a href=""> Current </a></li>
         <li><a href=""> Search </a></li>
-        <li><a href=""> Franklin </a></li>
-        <li><a href="greenville.html"> Greenville </a></li>
+        <li><a href="franklinweather-id.html"> Franklin </a></li>
+        <li><a href=""> Greenville </a></li>
         </ul>
   </nav>
 
   <script src="../js/funtions.js"></script>
+  <script src="../js/localdata.js"></script>
  </body>
 </html>
