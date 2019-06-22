@@ -58,6 +58,18 @@ let elevationBox = g.Elevation;
 
 let longBox = g.Longitude;
 
+let latBox = g.Latitude;
+
+let windirBox = g.Direction;
+
+let gustBox = g.Gusts;
+
+let highBox = g.High;
+
+let lowBox = g.Low;
+
+let percBox = g.Precip;
+
     // ************ Display the content ******************************
     // Set the title with the location name at the first
     // Gets the title element so it can be worked with
@@ -80,6 +92,18 @@ let longBox = g.Longitude;
 
 
     document.getElementById("long").innerHTML = longBox;
+
+    document.getElementById("lat").innerHTML = latBox;
+
+    document.getElementById("wind-dir").innerHTML = windirBox;
+
+    document.getElementById("gusts").innerHTML = gustBox;
+
+    document.getElementById("high").innerHTML = highBox;
+
+    document.getElementById("low").innerHTML = lowBox;
+
+    document.getElementById("perc").innerHTML = percBox;
 
     // Set the temperature information
     document.getElementById("curTemp").innerHTML = tempData;
