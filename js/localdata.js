@@ -90,7 +90,7 @@ let percBox = g.Precip;
     contentHeading.innerHTML = fullName;
     // The h1 in main h1 should now say "Greenville, SC"
 
-
+   // General information Boxes
     document.getElementById("long").innerHTML = longBox;
 
     document.getElementById("lat").innerHTML = latBox;
