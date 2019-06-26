@@ -1,14 +1,27 @@
-
-// use strict directive goes here?
-
 let pageNav = document.getElementById('page-nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
+
+pageNav.addEventListener('click', function(evt){
+
+//Get the city name
+let cityName = evt.target.innerHTML;
+console.log(cityName);
+switch (cityName) {
+  case "Franklin":
+  case "Greenville":
+  case "Springfield":
+    evt.preventDefault();
+  break;
+
+}
+
 let weatherURL = "../weather/weather.json";
 
-fetchData(weatherURL);
-function fetchData(weatherURL){
-  let cityName = 'Greenville'; // The data we want from the weather.json file
+// fetchData(weatherURL);
+
+// function fetchData(weatherURL){
+//   let cityName = 'Greenville'; // The data we want from the weather.json file
   fetch(weatherURL)
   .then(function(response) {
   if(response.ok){
@@ -133,4 +146,6 @@ let percBox = g.Precip;
   console.log('There was a fetch problem: ', error.message);
   statusContainer.innerHTML = 'Sorry, the data could not be processed.';
   })
-}
+// } ends function
+
+})
