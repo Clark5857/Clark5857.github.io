@@ -212,8 +212,8 @@ picture img {
 
 #sumimage {
   display: block;
-  height: 50%;
-  width: 50%;
+  height: 250px;
+  width: 300px;
   margin: auto;
 }
 #hourly-deg {
