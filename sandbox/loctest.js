@@ -2,6 +2,12 @@
 
 'use strict';
 
+ // Set global variable for custom header required by NWS API
+ var idHeader = {
+    headers: {
+      "User-Agent": "Student Learning Project - cla18002@byui.edu"
+    }
+  };
 
 var storage = window.localstorage; 
 
@@ -36,3 +42,5 @@ if (navigator.geolocation) {
 
   // Call getLocation function, send locale
   getLocation(locale);
+
+ 
