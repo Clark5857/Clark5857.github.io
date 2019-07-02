@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+ <head>
+  <meta charset="UTF-8">
+  <title id="page-title"> | Weather Site</title>
+  <meta name="description" content="Short Description of the page.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/screen.css" media="screen">
+</head>
+
+ <body>
+  <header id="page-header">
+    <img src="images/plan-images/logo.jpeg" alt="Weather Site logo">
+    <p id="site-brand">The Weather Site</p>
+  </header>
+
+  <section id="status">Please be patient while I get your weather information.</section>
+
+  <main id="main-content" class="hide">
+
+    <h1 id="locName">Greenville, SC</h1> 
+    
+  <section id="location" class="local">
+      
+      <ul>
+       <li><strong>Zip:</strong> 29601 |</li>
+       <li><strong>Elevation:</strong> <span id="elevation"></span> | </li>
+       <li><strong>Latitude:</strong><span id="lat"></span>|</li>
+       <li><strong>Longitude:</strong><span id="long"></span> |</li>
+      </ul>
+  </section>
+
+  <!-- <section id="background"> -->
+  <div id="curWeather" class="clear">
+  <section class="container"> 
+
+  <section id="temps" class="tile">
+    <h2>Temprature</h2>
+        <h2 id="curTemp">?? &deg; F</h2>
+        <p><strong>Percipitation:</strong><span id="perc"></span></p>
+        <p><strong>High: </strong><span id="high"> &deg;</span> </p>
+        <p><strong>Low: </strong><span id="low"> &deg;</span></p>
+        <p><strong>Feels Like: </strong><span id="feelTemp"></span></p>
+  </section>
+  
+  <section id="wind" class="tile">
+    <h2>Wind</h2>
+    <!-- work the css to inset the mph -->
+
+    <div id="wind-dial"><div id="dial" class="sw"></div></div>
+    
+    <p id="wind-speed">?? mph</p>
+
+        <p><strong>Direction:</strong><span id="wind-dir"></span></p>
+        <p><strong>Gusts:</strong><span id="gusts"></span></p>
+        
+  </section>
+
+  <section id="summary" class="tile">
+
+      <!-- <picture>
+        <source media="(min-width: 400px)" srcset="images/rain800.jpg">
+        <source media="(min-width: 250px)" srcset="images/rain400.jpg">
+        <img src="images/rain400.jpg" alt="rain">
+      </picture> -->
+
+    <h2 id="sumTitle"><strong>Summary</strong></h2>
+      
+
+      <div id="sumimage" class="clear"></div>
+
+    
+  </section>
+
+   </section>
+
+
+  <section id="hourly"> 
+    <h3>Hourly</h3>
+    <div id="scroll">
+    <p id="hourly-deg"></p>
+    </div>
+  </section>
+  </div>
+
+
+
+  </main>
+  <footer>
+      <h4>&copy;2019 James Clark</h4>
+  </footer>
+
+  <nav id="page-nav">
+    <ul>
+        <li><a href="weathersiteplan.html" title="Go to the Weather Site home page">Weather Site Plan</a></li>
+        <li><a href="../index.html"> Index | Home </a></li>
+        <li><a href="">Current</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        </ul>
+  </nav>
+
+  <script src="../js/funtions.js"></script>
+  <script src="../sandbox/loctest.js"></script>
+ </body>
+</html>
