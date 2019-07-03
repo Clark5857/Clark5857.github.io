@@ -145,7 +145,7 @@ function backgroundImage(backImages){
   }
 }
 
-// Meters to Feet Function
+//**************/ Meters to Feet Function ********************
 
 let meters = 1514.246; 
 
@@ -161,6 +161,15 @@ function meter2feet(meters) {
 
     elevation.innerHTML = mf;
 }
+
+//**************/ Celsius to Fahrenhit Function ******************** 
+
+// let celsius = ;
+// cel2fahr(celsius);
+
+// function cel2fahr(celsius){
+//   let tempfahr 
+// }
    
 
 // Convert, Format time to 12 hour format
@@ -275,7 +284,7 @@ let nextHour = date.getHours() + 1;
     
       // Store weather information to localStorage 
   storage.setItem("windDirection", data.properties.windDirection.value);
-  storage.setItem("windSpeed", data.properties.windpeed.value);
+  storage.setItem("windSpeed", data.properties.windSpeed.value);
   storage.setItem("windDirection", data.properties.windDirection.value);
   storage.setItem("temperature", data.properties.temperature.value);
   storage.setItem("windGust", data.properties.windGust.value);
@@ -285,8 +294,11 @@ let nextHour = date.getHours() + 1;
      }) 
     .catch(error => console.log('There was a getWeather error: ', error)) 
    } // end getWeather function
+
   
-   // Gets forcast information 
+
+   // *********************** Gets forcast information *******************
+   
    function getForcast(){
      //url for forcast info.
      const URL = 'https://api.weather.gov/gridpoints/PIH/125,87/forecast';
@@ -304,10 +316,25 @@ let nextHour = date.getHours() + 1;
      console.log(data);
   
      // Store data to localstorage 
-     storage.setItem("highTemp", data.properties.periods.0.temperature); 
-     
+     storage.setItem("highTemp", data.properties.periods[0].temperature); 
+     storage.setItem("lowTemp", data.properties.periods[1].temperature);
+
     // Build the page for viewing 
-    // viewPage()
+    buildPage();
     }) 
    .catch(error => console.log('There was a getForcast error: ', error)) 
   } // end getForcast function
+
+  function buildPage(){
+  // Task 1 - Feed data to WC, Dial, Image, Meters to feet and hourly temps functions
+buildWC(storage.getItem("windSpeed"),storage.getItem("temperature"));
+
+  // Task 2 - Populate location information
+
+  // Task 3 - Populate weather information
+
+  // Task 4 - Hide status and show main
+}
+  
+
+
