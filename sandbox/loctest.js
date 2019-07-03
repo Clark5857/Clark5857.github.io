@@ -119,18 +119,40 @@ function getWeather(stationId) {
     console.log(data);
   
     // Store weather information to localStorage 
- storage.setItem("windChill", data.properties.windChill.value);
- storage.setItem("windGust", data.properties.windGust.value);
- storage.setItem("windSpeed", data.properties.windSpeed.value);
- storage.setItem("temperature", data.properties.temperature.value);
- storage.setItem("elevation", data.properties.elevation.value);
- storage.setItem("highTemp", data.properties.maxTemperatureLast24Hours.value);
- storage.setItem("lowTemp", data.properties.minTemperatureLast24Hours.value);
- storage.setItem("percipitation", data.properties.percipitationLastHour.value);
+storage.setItem("windDirection", data.properties.windDirection.value);
+storage.setItem("windSpeed", data.properties.windpeed.value);
+storage.setItem("windDirection", data.properties.windDirection.value);
+storage.setItem("temperature", data.properties.temperature.value);
+storage.setItem("windGust", data.properties.windGust.value);
     // Build the page for viewing 
     // viewPage()
+    getForcast();
    }) 
   .catch(error => console.log('There was a getWeather error: ', error)) 
  } // end getWeather function
 
- 
+ // Gets forcast information 
+ function getForcast(){
+   //url for forcast info.
+   const URL = 'https://api.weather.gov/gridpoints/PIH/125,87/forecast';
+// NWS User-Agent header (built above) will be the second parameter 
+ fetch(URL, idHeader) 
+ .then(function(response){
+   if(response.ok){ 
+    return response.json(); 
+   } 
+   throw new ERROR('Response not OK.');
+ })
+ .then(function (data) { 
+   // Let's see what we got back
+   console.log('Json object from getForcast function:'); 
+   console.log(data);
+
+   // Store data to localstorage 
+   storage.setItem("highTemp", data.properties.periods.0.temperature); 
+   
+  // Build the page for viewing 
+  // viewPage()
+  }) 
+ .catch(error => console.log('There was a getForcast error: ', error)) 
+} // end getForcast function
