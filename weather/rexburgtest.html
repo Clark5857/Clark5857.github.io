@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/screen.css" media="screen">
 </head>
+<!-- Team project: Partner - Jose Aquino-->
 
  <body>
   <header id="page-header">
@@ -14,11 +15,11 @@
     <p id="site-brand">The Weather Site</p>
   </header>
 
-  <section id="status">Please be patient while I get your weather information.</section>
+  <section id="status" class="status">Please be patient while I get your weather information.</section>
 
-  <main id="main-content">
+  <main id="main-content" class="hide">
 
-    <h1 id="locName">Greenville, SC</h1> 
+    <h1 id="locName"></h1> 
     
   <section id="location" class="local">
       
@@ -31,13 +32,12 @@
   </section>
 
   <!-- <section id="background"> -->
-  <div id="curWeather" class="clear">
+  <div id="curWeather" class="rain">
   <section class="container"> 
 
   <section id="temps" class="tile">
     <h2>Temprature</h2>
         <h2 id="curTemp">?? &deg; F</h2>
-        <p><strong>Percipitation:</strong><span id="perc"></span></p>
         <p><strong>High: </strong><span id="high"> &deg;</span> </p>
         <p><strong>Low: </strong><span id="low"> &deg;</span></p>
         <p><strong>Feels Like: </strong><span id="feelTemp"></span></p>
@@ -49,7 +49,7 @@
 
     <div id="wind-dial"><div id="dial" class="sw"></div></div>
     
-    <p id="wind-speed">?? mph</p>
+    <p id="wind-speed"> mph</p>
 
         <p><strong>Direction:</strong><span id="wind-dir"></span></p>
         <p><strong>Gusts:</strong><span id="gusts"></span></p>
@@ -78,7 +78,7 @@
   <section id="hourly"> 
     <h3>Hourly</h3>
     <div id="scroll">
-    <p id="hourly-deg"></p>
+    <ul id="hourly-deg"></ul>
     </div>
   </section>
   </div>

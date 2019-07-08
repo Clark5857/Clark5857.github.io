@@ -33,12 +33,14 @@ if (navigator.geolocation) {
 
 
      console.log(`Lat and Long are: ${locale}.`);
-  
+  storage.setItem("lat", lat);
+  storage.setItem("long", long);
   
     })
    } else {
     status.innerHTML = "Your browser doesn't support Geolocation or it is not enabled!";
    } // end else
+  
   } //end getGeoLocation
 
  
