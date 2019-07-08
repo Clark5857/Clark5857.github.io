@@ -120,7 +120,7 @@ function getcondition(conditions) {
 
   if (conditions.includes("clear") || conditions.includes("sun")) {
     result = "clear";
-  } else if (conditions.toLowerCase().includes("clouds") || conditions.toLowerCase().includes("shade")) {
+  } else if (conditions.toLowerCase().includes("clouds") || conditions.toLowerCase().includes("cloudy")) {
     result = "clouds";
   } else if (conditions.includes("fog") || conditions.includes("moisture")) {
     result = "fog";
