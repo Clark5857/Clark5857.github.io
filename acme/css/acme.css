@@ -121,10 +121,17 @@ margin-right: auto;
 #recipesList{
     width: 50%;
     flex: 0 1 50%;
-    border: solid 5px white;
+    /* border: solid 1px black; */
     text-align: center;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    padding: 1%;
     
+}
+
+.recColor {
+background-color:lightgrey;
+/* padding: 5%; */
+
 }
 
 footer{
