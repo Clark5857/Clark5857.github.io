@@ -1,6 +1,6 @@
 let Nav = document.getElementById('nav');
 
-let acme = "https://Erambal.github.io/finalproject/acme/js/acme.json";
+let acme = "../acme/js/acme.json";
 
  
 

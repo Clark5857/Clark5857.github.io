@@ -57,7 +57,7 @@ nav #links{
 }
 /******** Welcome to Acme Container ***********/
 #banner1{
-    background-image: url(/finalproject/acme/images/site/feature.jpg);
+    background-image: url(../images/site/feature.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -121,16 +121,28 @@ margin-right: auto;
 #recipesList{
     width: 50%;
     flex: 0 1 50%;
-    border: solid 1px #000;
+    border: solid 5px white;
     text-align: center;
     background-color: lightgrey;
+    
 }
 
 footer{
     font-size: 12px;
    text-align: center;
+   padding: 2%;
 
 }
+
+#line {
+    background-color: #000;
+    width: 95%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 5%; */
+}
+
 #copyright{
    text-align: center;
 }
