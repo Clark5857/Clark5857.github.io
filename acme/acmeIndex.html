@@ -1,42 +1,77 @@
-<!doctype html>
-<html lang="en-us">
- <head>
-  <meta charset="UTF-8">
-  <title>ACME | Website</title>
-  <meta name="description" content="ACME Final Project Website">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="../acme/css/acme.css" media="screen">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ACME PROJECT</title>
+  <link rel="stylesheet" href="/finalproject/acme/css/stylesheet.css" type="text/css">
   </head>
 
-  <body>
-    Hero description text
-    <ul>
-      <li><h2>Acme Rocket</h2></li>
-      <li>Quick lighting fuse</li>
-      <li>NHTSA approved seat belts</li>
-      <li>Mobile launch stand included</li>
-      <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
-    </ul>
-  
-  Hero Product Review text
-    <ul>
-      <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
-      <li>"That thing was fast!" (4/5)</li>
-      <li>"Talk about fast delivery." (5/5)</li>
-      <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
-      <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
-    </ul>
-            
-  Recipe Text
-    Pulled Roadrunner BBQ
-    Roadrunner Pot Pie
-    Roadrunner Soup
-    Roadrunner Tacos
-    
- 
-  </body>
+  <body id="backgroundImage">
+      <div id= "logo-div">
+      <img id= "logo" src="images/site/logo.png"> 
+    </div>
+<section class="container">
+    <nav id="nav">
+                
+        <ul id= "links">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </nav> 
 
-  <footer>
-    &copy; 2018 ACME, All rights reserved.
-    All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
-  </footer>
+        <h1>Welcome to Acme!</h1>
+        <section id="banner1">
+        <section id = "banner_container">
+        <ul id= "banner_1_list">
+          <li><h2>Acme Rocket</h2></li>
+          <li>Quick lighting fuse</li>
+          <li>NHTSA approved seat belts</li>
+          <li>Mobile launch stand included</li>
+          <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="../acme/images/site/iwantit.gif"></a></li>
+        </ul>
+      </section>
+      </section>
+      
+
+      <!--Reviews section-->  
+<section id="reviewRecipes">
+
+  <section class="reviewSection">
+    <h1 class = "secondTitle">Acme Rocket Reviews</h1>
+      <ul>
+        <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+        <li>"That thing was fast!" (4/5)</li>
+        <li>"Talk about fast delivery." (5/5)</li>
+        <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+        <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+      </ul>
+  </section>
+
+
+      
+  <section class="recipes">
+     <h1>Featured Recipes</h1>
+   <!-- <section class="recipesBox"> -->
+     <ul id="recipesBox2">
+          <li id= "recipesList"><img src="/finalproject/acme/images/recipes/bbqsand.jpg"><p><a href="#">Pulled Roadrunner BBQ</a></p></li>
+          <li id= "recipesList"><img src="/finalproject/acme/images/recipes/potpie.jpg"><p><a href="#">Roadrunner Pot Pie</a></p></li>
+          <li id= "recipesList"><img src="/finalproject/acme/images/recipes/soup.jpg"><p><a href="#">Roadrunner Soup</a></p></li>
+          <li id= "recipesList"><img src="/finalproject/acme/images/recipes/taco.jpg"><p><a href="#">Roadrunner Tacos</a></p></li>
+          </ul>
+  <!-- </section>  -->
+</section> 
+
+
+<footer>
+  <strong>______________________________________________________________________________________</strong>
+        <p id= "copyright">&copy; 2018 ACME, All rights reserved.</p>
+      All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
+</footer>
+    
+  </body>
+  <script src="../acme/js/acme.js"></script>
+  
+</html>
