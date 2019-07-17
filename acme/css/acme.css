@@ -9,6 +9,7 @@
 */
 
 /********** Text Styles ********/
+
 html {
     box-sizing: border-box;
  }
@@ -22,6 +23,10 @@ html {
  }
  h2 {
     color:#de2226;
+ }
+
+ #TempContent{
+     margin: 0%;
  }
  /********** Body *********/
  /* #backgroundImage{
