@@ -1,5 +1,5 @@
 let Nav = document.getElementById('nav');
-let acme = "https://Erambal.github.io/finalproject/acme/js/acme.json";
+let acme = "/acme/js/acme.json";
 
 Nav.addEventListener('click', function(evt){
 
@@ -18,6 +18,7 @@ Nav.addEventListener('click', function(evt){
            let content2 = document.getElementById('product-page');
           content2.setAttribute('class', '');
          break;
+
       case "Home":
           let content3 = document.getElementById('home-main');
           content3.setAttribute('class', '');
@@ -26,6 +27,7 @@ Nav.addEventListener('click', function(evt){
          break;  
    }
     
+   document.getElementById('pageNames').innerHTML= name + " ACME";
   
    fetch(acme)
    .then(function(response) {

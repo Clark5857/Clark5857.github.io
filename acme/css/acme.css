@@ -34,7 +34,7 @@ html {
     font-family: Helvetica, sans-serif;
     background-image: url('../images/site/background.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
  }
  
  /******** Navigation Container ***********/
@@ -78,10 +78,16 @@ html {
     flex-direction: row;
  }
  #banner_1_list{
-     padding: 10px;
+     width: 50%;
     list-style-type: none;
     color: red;
+    font-size: 30%;
+    background-color:rgba(255,255,255,.5);
     
+ }
+
+ #actionbtn{
+     width: 60%;
  }
  
  /******** Logo Container ***********/
@@ -107,8 +113,7 @@ html {
     width: 100%;
  }
  .secondTitle {
-    margin-top:0px;
-    margin-bottom: 0px;
+    font-size: 1em;
  }
  #recipesBox2{
     width: 87%;
@@ -258,5 +263,12 @@ width:50%;
    padding: 10px;
   list-style-type: none;
   color: red;
+  font-size: 100%;
+  background-color:rgba(255,255,255,0);
 }
+
+#actionbtn{
+    width: 50%;
+}
+
 }
