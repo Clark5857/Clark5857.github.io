@@ -1,77 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ACME PROJECT</title>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>ACME PROJECT</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../acme/css/acme.css" type="text/css">
-  </head>
-
-  <body id="backgroundImage">
-      <div id= "logo-div">
-      <img id= "logo" src="../acme/images/site/logo.png"> 
-    </div>
+ </head>
+ 
+ <body id="backgroundImage">
+     <div id= "logo-div">
+     <img id= "logo" src="../acme/images/site/logo.png" alt="logo image">
+   </div>
+<main>
 <section class="container">
-    <nav id="nav">
-                
-        <ul id= "links">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
-    </nav> 
+   <nav id="nav">
+              
+       <ul id= "links">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+       </ul>
+   </nav>
+<section id = "home-main">
+       <h1>Welcome to Acme!</h1>
+       <div id="banner1">
+       <div id = "banner_container">
+       <ul id= "banner_1_list">
+         <li><h2>Acme Rocket</h2></li>
+         <li>Quick lighting fuse</li>
+         <li>NHTSA approved seat belts</li>
+         <li>Mobile launch stand included</li>
+         <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="../acme/images/site/iwantit.gif"></a></li>
+       </ul>
+     </div>
+     </div>
+    
 
-        <h1>Welcome to Acme!</h1>
-        <section id="banner1">
-        <section id = "banner_container">
-        <ul id= "banner_1_list">
-          <li><h2>Acme Rocket</h2></li>
-          <li>Quick lighting fuse</li>
-          <li>NHTSA approved seat belts</li>
-          <li>Mobile launch stand included</li>
-          <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="../acme/images/site/iwantit.gif"></a></li>
-        </ul>
-      </section>
-      </section>
-      
-
-      <!--Reviews section-->  
+     <!--Reviews section--> 
 <section id="reviewRecipes">
 
-  <section class="reviewSection">
-    <h1 class = "secondTitle">Acme Rocket Reviews</h1>
-      <ul>
-        <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
-        <li>"That thing was fast!" (4/5)</li>
-        <li>"Talk about fast delivery." (5/5)</li>
-        <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
-        <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
-      </ul>
-  </section>
+ <section class="reviewSection">
+   <h1 class = "secondTitle">Acme Rocket Reviews</h1>
+     <ul>
+       <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+       <li>"That thing was fast!" (4/5)</li>
+       <li>"Talk about fast delivery." (5/5)</li>
+       <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+       <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+     </ul>
+ </section>
+</section>
 
-
-      
-  <section class="recipes">
-     <h1>Featured Recipes</h1>
-   <!-- <section class="recipesBox"> -->
-     <ul id="recipesBox2">
-          <li id= "recipesList"><section class="recColor"><img src="../acme/images/recipes/bbqsand.jpg"></section><p><a href="#">Pulled Roadrunner BBQ</a></p></li>
-          <li id= "recipesList"><section class="recColor"><img src="../acme/images/recipes/potpie.jpg"></section><p><a href="#">Roadrunner Pot Pie</a></p></li>
-          <li id= "recipesList"><section class="recColor"><img src="../acme/images/recipes/soup.jpg"></section><p><a href="#">Roadrunner Soup</a></p></li>
-          <li id= "recipesList"><section class="recColor"><img src="../acme/images/recipes/taco.jpg"></section><p><a href="#">Roadrunner Tacos</a></p></li>
-          </ul>
-  <!-- </section>  -->
-</section> 
-
-
-<footer>
-  <section id="line"></section>
-        <p id= "copyright">&copy; 2018 ACME, All rights reserved.</p>
-      All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
-</footer>
     
-  </body>
-  <script src="../acme/js/acmejava.js"></script>
-  
-</html>
+ <section class="recipes">
+    <h1>Featured Recipes</h1>
+  <!-- <section class="recipesBox"> -->
+    <ul id="recipesBox2">
+         <li class= "recipesList"><section class="recColor"><img src="../acme/images/recipes/bbqsand.jpg" alt= "bbqsand" ></section><p><a class="recipeFont" href="#">Pulled Roadrunner BBQ</a></p></li>
+         <li class= "recipesList"><section class="recColor"><img src="../acme/images/recipes/potpie.jpg" alt= "potpie" ></section><p><a class="recipeFont" href="#">Roadrunner Pot Pie</a></p></li>
+         <li class= "recipesList"><section class="recColor"><img src="../acme/images/recipes/soup.jpg" alt= "soup" ></section><p><a class="recipeFont" href="#">Roadrunner Soup</a></p></li>
+         <li class= "recipesList"><section class="recColor"><img src="../acme/images/recipes/taco.jpg" alt= "taco" ></section><p><a class="recipeFont" href="#">Roadrunner Tacos</a></p></li>
+         </ul>
+ <!-- </section>  -->
+</section>
+</section>
+
+<section id = "product-page">
+  <h1 id = "name1"></h1>
+   
+   <section id = "content">
+       
+    <section id="childpicture">
+       <img id="path" src="path" alt="products">
+    </section>
+
+    <section id="itemReviews">
+       <p id="description"></p>
+
+       <p><span class="bold">Made by: </span><span id="manufacturer"></span></p>
+
+       <p><span class="bold">Reviews: </span><span id="reviews"></span></p>
+      
+       <h1 id="price-font">Price: $<span id="price"></span></h1>
+   </section>
+   
+
+   </section>
+  </section>
+<footer>
+ <section id="line"></section>
+       <p id= "copyright">&copy; 2018 ACME, All rights reserved.</p>
+     All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
+</footer>
+</section>
+</main>
+<script src="../acme/js/acmejava.js"></script>
+ </body>
+ 
+ </html>

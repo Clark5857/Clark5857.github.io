@@ -1,155 +1,264 @@
-/*Color Scheme: 
-    background-color: #000000
-    background-color: #0000ee
-    background-color: #808080
-    background-color: #990033
-    background-color: #de2226
-    background-color: #ffffff
-    
+/*Color Scheme:
+   background-color: #000000
+   background-color: #0000ee
+   background-color: #808080
+   background-color: #990033
+   background-color: #de2226
+   background-color: #ffffff
+  
 */
 
 /********** Text Styles ********/
 html {
     box-sizing: border-box;
+ }
+
+.hide{
+   display: none;
 }
 
-html * {
+ html * {
     box-sizing: border-box;
-}
-h2 {
+ }
+ h2 {
     color:#de2226;
-}
-
+ }
  /********** Body *********/
-#backgroundImage{
+ /* #backgroundImage{
     background-image: url(../images/site/background.jpg);
     background-repeat: none;
-    background-size: 100%; 
-}
-
-body {
+    background-size: 100%;
+ } */
+ 
+ body {
     font-family: Helvetica, sans-serif;
     background-image: url('../images/site/background.jpg');
     background-repeat: none;
-    background-size: 100%; 
-}
-
-/******** Navigation Container ***********/
-nav{
+    background-size: 100%;
+ }
+ 
+ /******** Navigation Container ***********/
+ nav{
     background-color: #de2226;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-nav #links{
+    
+ }
+ nav #links{
     display: flex;
     flex: row;
     justify-content: space-evenly;
     list-style: none;
     color: #ffff;
     width: 80%;
-    font-size: 20px;
+    font-size: 15px;
     margin-top:0px;
     padding-left: 0px;
     height: 40px;
     align-items: center;
+ 
+ }
+ a{   
+   text-decoration: none;
+   list-style-type: none;
+   color: white;
 
-}
-/******** Welcome to Acme Container ***********/
-#banner1{
-    background-image: url(../images/site/feature.jpg);
+ }
+ /******** Welcome to Acme Container ***********/
+ #banner1{
+    background-image: url('../images/site/feature.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
-}
-#banner_container{
+    /* height: 200px; */
+ }
+ #banner_container{
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     flex-direction: row;
-}
-#banner_1_list{
+ }
+ #banner_1_list{
      padding: 10px;
     list-style-type: none;
     color: red;
-}
-
-/******** Logo Container ***********/ 
-#logo-div{
+    
+ }
+ 
+ /******** Logo Container ***********/
+ #logo-div{
     background-color: #ffff;
-    width: 85%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-.container{
-background-color: #ffff;
-width: 85%;
-margin-left: auto;
-margin-right: auto;
-}
-
-
-/******** Recipe Container ***********/
-
-#reviewRecipes{
+ }
+ 
+ 
+ .container{
+ background-color: #ffff;
+ width: 98%;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ 
+ 
+ /******** Recipe Container ***********/
+ 
+ #reviewRecipes{
     width: 100%;
-}
-
-.reviewSection{
-    width: 50%;
-    float:right;
-}
-
-.recipes{
-    width: 50%;
-}
-
-.secondTitle {
+ }
+ .secondTitle {
     margin-top:0px;
     margin-bottom: 0px;
-}
-#recipesBox2{
+ }
+ #recipesBox2{
     width: 87%;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-#recipesList{
+ }
+ .recipeFont{
+    color: blue;
+    text-decoration: underline;
+ }
+ .recipesList{
     width: 50%;
     flex: 0 1 50%;
-    /* border: solid 1px black; */
+    /* border: solid 1px #000; */
     text-align: center;
     /* background-color: lightgrey; */
     padding: 1%;
-    
-}
+ }
 
-.recColor {
-background-color:lightgrey;
-/* padding: 5%; */
-
-}
-
-footer{
+ .recColor{
+    background-color: lightgray;
+ }
+ 
+ footer{
     font-size: 12px;
    text-align: center;
    padding: 2%;
+ 
+ }
 
-}
+ #line {
+    background-color: black;
+width: 95%;
+height: 5px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+ }
 
-#line {
-    background-color: #000;
-    width: 95%;
-    height: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 5%; */
-}
-
-#copyright{
+ #copyright{
    text-align: center;
+ }
+
+
+   /*********Child Pages*********/
+
+#content{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   } 
+
+#childpicture{
+   width:50%;
+   justify-content: center;
+   text-align: center;
+}
+
+#itemReviews{
+width:50%;
+}
+
+ #info{
+   width: 50%;
+   float:right;
+ }
+ #path{
+    width:60%;
+    padding: 10px;
+    margin: 10px;
+ }
+ #price-font{
+    font-size: 35px;
+    color: red;
+ }
+
+ .bold{
+    font-weight: bold;
+ }
+
+
+ @media screen and (min-width: 700px) {
+    /* #reviewSection{
+        width: 100%;
+    } */
+    #path{
+      width:70%;
+      padding: 10px;
+      margin: 10px;
+    justify-content: center;
+
+   }
+    .recipes{
+      width: 50%;
+   }
+
+   .reviewSection{
+      width: 50%;
+      float:right;
+   }
+
+   #info{
+     width: 50%;
+     float:right;
+   }
+
+   .container{
+      background-color: #ffff;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      #logo-div{
+         background-color: #ffff;
+         width: 85%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      nav #links{
+         display: flex;
+         flex: row;
+         justify-content: space-evenly;
+         list-style: none;
+         color: #ffff;
+         width: 80%;
+         font-size: 20px;
+         margin-top:0px;
+         padding-left: 0px;
+         height: 40px;
+         align-items: center;
+      
+      }
+
+      #banner1{
+         background-image: url('../images/site/feature.jpg');
+         background-size: 100%;
+         background-repeat: no-repeat;
+         width: 100%;
+         height: 300px;
+ } 
+
+ #banner_1_list{
+   padding: 10px;
+  list-style-type: none;
+  color: red;
+}
 }
