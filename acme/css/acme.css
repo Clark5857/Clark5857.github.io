@@ -33,7 +33,7 @@ html {
  body {
     font-family: Helvetica, sans-serif;
     background-image: url('../images/site/background.jpg');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: 100%;
  }
  
@@ -47,7 +47,6 @@ html {
  }
  nav #links{
     display: flex;
-    flex: row;
     justify-content: space-evenly;
     list-style: none;
     color: #ffff;
@@ -235,7 +234,6 @@ width:50%;
 
       nav #links{
          display: flex;
-         flex: row;
          justify-content: space-evenly;
          list-style: none;
          color: #ffff;
