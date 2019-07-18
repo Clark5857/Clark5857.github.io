@@ -28,6 +28,11 @@ html {
  #TempContent{
      margin: 0%;
  }
+
+ #name1{
+    font-size: 200%;
+    padding-left: 5%;
+ }
  /********** Body *********/
  /* #backgroundImage{
     background-image: url(../images/site/background.jpg);
@@ -175,13 +180,14 @@ margin-top: 5%;
    } 
 
 #childpicture{
-   width:50%;
+   width:100%;
    justify-content: center;
    text-align: center;
 }
 
 #itemReviews{
-width:50%;
+width:100%;
+padding: 5%;
 }
 
  #info{
@@ -274,6 +280,42 @@ width:50%;
 
 #actionbtn{
     width: 50%;
+}
+
+ /*********Child Pages*********/
+
+ #content{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+} 
+
+#childpicture{
+width:50%;
+justify-content: center;
+text-align: center;
+}
+
+#itemReviews{
+width:50%;
+}
+
+#info{
+width: 50%;
+float:right;
+}
+#path{
+ width:80%;
+ padding: 10px;
+ margin: 10px;
+}
+#price-font{
+ font-size: 35px;
+ color: red;
+}
+
+.bold{
+ font-weight: bold;
 }
 
 }
